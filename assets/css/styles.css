@@ -137,7 +137,7 @@ button {
 /* Hero */
 .hero {
     font-family: "Public Sans", sans-serif;
-    padding: 60px 0 88px;
+    padding: 60px 0 165px;
 }
 
 .hero__wrap {
@@ -297,4 +297,72 @@ button {
     background: #4dbb9a;
     filter: blur(137px);
     z-index: -10;
+}
+
+/* Logo */
+.logo-branch {
+    margin-top: 42px;
+    background: #fff;
+}
+
+.logo-branch__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 76px 122px;
+    border-radius: 100.5px;
+    background: var(--second-primary-color);
+}
+
+.logo-branch__item {
+    display: flex;
+    align-items: center;
+}
+
+.logo-branch__name {
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
+/* Logo item 1 */
+.logo-branch__item:nth-child(1) .logo-branch__name {
+    font-size: 3.1rem;
+    font-weight: 500;
+}
+
+/* Logo item 2 */
+.logo-branch__item:nth-child(2) .logo-branch__name {
+    margin-left: 5px;
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+/* Logo item 3 */
+.logo-branch__item:nth-child(3) .logo-branch__icon {
+    width: 33px;
+    height: 33px;
+}
+
+.logo-branch__item:nth-child(3) .logo-branch__name {
+    margin-left: 11px;
+    color: #163c35;
+    font-size: 2.6rem;
+}
+
+/* Logo item 4 */
+.logo-branch__item:nth-child(4) .logo-branch__name {
+    font-family: "Sonsie One", cursive;
+    font-size: 2.3rem;
+}
+
+/* Logo item 5 */
+.logo-branch__item:nth-child(5) .logo-branch__icon {
+    width: 33px;
+    height: 33px;
+}
+
+.logo-branch__item:nth-child(5) .logo-branch__name {
+    margin-left: 10px;
+    font-size: 1.9rem;
+    font-weight: 600;
 }
