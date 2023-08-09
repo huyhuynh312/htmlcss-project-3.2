@@ -65,21 +65,38 @@ button {
 
 /* Header */
 .header {
-    margin: 28px 0 13px;
+    padding: 28px 0 13px;
     font-family: "Public Sans", sans-serif;
+    background: #fff;
 }
 
 .header.header-fixed {
     position: sticky;
-    top: 13px;
+    top: -15px;
     z-index: 1;
 }
 
 /* Navbar */
 .nav {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.nav::before {
+    display: block;
+    position: absolute;
+    content: "";
+    bottom: -13px;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(
+        18deg,
+        #fff 0%,
+        #dddcdc 51.25%,
+        rgba(212, 212, 212, 0) 100%
+    );
 }
 
 .nav__list {
@@ -115,4 +132,169 @@ button {
 
 .header__btn {
     margin-left: 69px;
+}
+
+/* Hero */
+.hero {
+    font-family: "Public Sans", sans-serif;
+    padding: 60px 0 88px;
+}
+
+.hero__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Hero left */
+.hero-body {
+    width: 35%;
+}
+
+.hero__heading {
+    max-width: 368px;
+    color: var(--third-primary-color);
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.hero__desc {
+    margin-top: 20px;
+    max-width: 341px;
+    font-family: "Public Sans", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.56;
+}
+
+.hero-watch,
+.hero-cta {
+    display: flex;
+    align-items: center;
+}
+
+.hero-cta {
+    margin-top: 42px;
+    column-gap: 36px;
+}
+
+.hero-watch__wrap {
+    position: relative;
+    width: 57px;
+    height: 59px;
+    animation: rotateImage 0.25s linear infinite;
+    animation-play-state: paused;
+}
+
+@keyframes rotateImage {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+.hero-watch__btn {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    border: none;
+    top: 50%;
+    left: 8px;
+    border-radius: 50%;
+    outline: none;
+    color: #fff;
+    background: #83a17d;
+    transform: translateY(-50%);
+}
+
+.hero-watch__btn:hover {
+    color: var(--primary-color);
+    background: #267474;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.hero-watch__btn:hover + .hero-watch__wrap {
+    animation-play-state: running;
+}
+
+.hero-watch__desc {
+    margin-left: 9px;
+    color: var(--third-primary-color);
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+/* Hero right */
+.hero__media {
+    position: relative;
+    width: 57%;
+    margin-right: 25px;
+}
+
+.hero__img {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__thumb {
+    display: block;
+    width: 202px;
+    height: 466px;
+    object-fit: cover;
+    border-radius: 110px;
+}
+
+.hero__thumb:nth-child(2) {
+    transform: translateY(77px);
+}
+
+/* Hero decor */
+.hero-decor {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 545px;
+    top: -32px;
+    left: -172px;
+}
+
+.hero-decor__img {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 8px;
+    left: -42px;
+    z-index: 1;
+}
+
+.hero-decor__line {
+    position: relative;
+}
+
+.hero-decor__02 {
+    transform: rotate(175.95deg);
+    position: absolute;
+    display: block;
+    content: "";
+    top: 240px;
+    width: 545px;
+    right: 70px;
+}
+
+.hero__bg {
+    position: absolute;
+    top: 122px;
+    right: 150px;
+    width: 340px;
+    height: 340px;
+    border-radius: 340px;
+    background: #4dbb9a;
+    filter: blur(137px);
+    z-index: -10;
 }
