@@ -648,6 +648,99 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Project -->
+            <section class="project">
+                <div class="container">
+                    <!-- Project top -->
+                    <section class="project-top row">
+                        <section class="project-left">
+                            <h2 class="project__heading heading">
+                                A quick glance of our past projects
+                            </h2>
+                            <span
+                                class="project__bullet--long bullet--long"
+                            ></span>
+                        </section>
+                        <section class="project-right">
+                            <p class="project__desc desc">
+                                Are you strive for the fast project simplicity
+                                and clarity. Great design is born of those two
+                                things.
+                            </p>
+                            <a href="#!" class="project__link row">
+                                Browse all Projects
+                                <svg
+                                    class="project__icon"
+                                    width="22"
+                                    height="12"
+                                    viewBox="0 0 22 12"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M1 6.29412H21M21 6.29412L15.7059 1M21 6.29412L15.7059 11"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </a>
+                        </section>
+                    </section>
+
+                    <!-- Project media -->
+                    <div class="project-media">
+                        <video
+                            id="video-player"
+                            src="./assets/video/Project-video.mp4"
+                            class="project__video"
+                            controls="controls"
+                        ></video>
+                        <button id="play-button" class="project__btn">
+                            <svg
+                                class="project__play"
+                                width="8"
+                                height="10"
+                                viewBox="0 0 8 10"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M7.48979 4.22586C8.15106 4.61996 8.13773 5.58212 7.4658 5.95775L1.49682 9.29454C0.824887 9.67017 -0.00170366 9.17755 0.00896126 8.40782L0.103701 1.57014C0.114366 0.800411 0.954284 0.330874 1.61555 0.724974L7.48979 4.22586Z"
+                                    fill="currentColor"
+                                />
+                            </svg>
+                        </button>
+                        <!-- Project decor -->
+                        <div class="project-decor">
+                            <img
+                                src="./assets/img/hero-flower.png"
+                                alt=""
+                                class="project-decor__img"
+                            />
+                            <img
+                                src="./assets/img/project-line.png"
+                                alt=""
+                                class="project-decor__line"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
+
+        <!-- Java script -->
+        <script>
+            const playButton = document.getElementById("play-button");
+            const videoPlayer = document.getElementById("video-player");
+            playButton.addEventListener("click", () => {
+                // Play video
+                videoPlayer.play();
+                // Hide the play button
+                playButton.style.display = "none";
+            });
+        </script>
     </body>
 </html>
