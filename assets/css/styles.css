@@ -974,7 +974,7 @@ button {
 
 /* Feature */
 .feature {
-    padding: 140px 0 184px;
+    padding: 140px 0 64px;
     background: #fff;
 }
 
@@ -1039,4 +1039,136 @@ button {
     text-align: center;
     font-size: 1.4rem;
     line-height: 1.71;
+}
+
+/* Blog */
+.blog {
+    padding: 120px 0 102px;
+}
+
+/* Blog top */
+.blog__title {
+    line-height: 1.13;
+}
+
+.blog__wrap {
+    margin-top: 10px;
+    position: relative;
+    justify-content: space-between;
+}
+
+.blog__heading {
+    width: 520px;
+}
+
+.blog__bullet--long {
+    left: 489px;
+    bottom: 20px;
+}
+
+.blog__desc {
+    width: 409px;
+    font-size: 1.6rem;
+    line-height: 1.63;
+}
+
+/* Blog content */
+.blog-content {
+    margin-top: 90px;
+}
+
+.blog__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+
+/* Blog item */
+.blog-item {
+    display: block;
+    width: 360px;
+    border: 1px solid #e8ebee;
+    border-radius: 40px 40px 20px 20px;
+    overflow: hidden;
+    transition: 0.25s;
+}
+
+.blog-item:hover {
+    box-shadow: 0px 12px 74px 0px rgba(91, 91, 91, 0.25);
+}
+
+.blog-item__img {
+    height: 317px;
+    overflow: hidden;
+}
+
+.blog-item__img:hover .blog-item__thumb {
+    transform: scale(1.1);
+}
+
+.blog-item__thumb {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 40px 40px 0px 0px;
+    transition: 0.25s;
+}
+
+.blog-item__info {
+    padding: 26px 30px 12px;
+    background: #fff;
+    border-radius: 0px 0px 20px 20px;
+    transition: 0.25s;
+}
+
+.blog-item__btn {
+    width: 107px;
+    height: 26px;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background: var(--second-primary-color);
+    transition: 0.25s;
+}
+
+.blog-item__btn:hover {
+    cursor: pointer;
+    color: #fff;
+    background: var(--primary-color);
+}
+
+.blog-item__link:hover .blog-item__heading {
+    color: var(--four-primary-color);
+}
+
+.blog-item__heading {
+    margin-top: 13px;
+    height: 90px;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    line-height: 1.67;
+}
+
+.blog-item__separate {
+    display: block;
+    margin-top: 9px;
+    width: 100%;
+    height: 1px;
+    background: #c4c4c4;
+}
+
+.blog-item__date {
+    display: block;
+    margin-top: 16px;
+    text-align: right;
+    color: #575d5e;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2;
 }
