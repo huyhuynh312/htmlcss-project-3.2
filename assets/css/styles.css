@@ -1172,3 +1172,132 @@ button {
     font-weight: 500;
     line-height: 1.2;
 }
+
+/* Footer */
+.footer {
+    background: var(--primary-color);
+    padding-bottom: 50px;
+}
+
+.footer-wrap {
+    padding: 72px 0 45px;
+    align-items: normal;
+    justify-content: space-between;
+    column-gap: 226px;
+}
+
+/* Footer left */
+.footer-left {
+    width: 37%;
+}
+
+.footer-form {
+    margin-top: 25px;
+    padding-bottom: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 354px;
+    border-bottom: 1px solid #6a8383;
+}
+
+.footer-form__input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: transparent;
+}
+
+.footer__heading {
+    color: #fff;
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.footer-form__submit {
+    padding: 12px;
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.footer-form__submit:hover .footer-form__btn {
+    color: var(--four-primary-color);
+}
+
+.footer-form__btn {
+    display: block;
+    width: 26px;
+    height: 16px;
+    color: #fff;
+}
+
+.footer-social {
+    margin-top: 47px;
+    column-gap: 22px;
+}
+
+.footer-social__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    color: #fff;
+    background: transparent;
+    border-radius: 50%;
+    border: 1px solid #265252;
+    transition: 0.25s;
+}
+
+.footer-social__btn:hover {
+    background: #a75325;
+}
+
+/* Footer right */
+.footer-right {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 50px;
+    padding-top: 22px;
+}
+
+.footer-item__heading {
+    color: #fff;
+    font-family: Public Sans;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.56;
+}
+
+.footer-item__column {
+    margin-top: 6px;
+}
+
+.footer-item__link {
+    display: block;
+    color: #6a8383;
+    font-family: Public Sans;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.25;
+}
+
+.footer-item__link:hover {
+    color: var(--four-primary-color);
+}
+
+.footer__separate {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(
+        14deg,
+        #143c3c 0%,
+        #295a5a 53.48%,
+        rgba(38, 82, 82, 0) 100%
+    );
+}
