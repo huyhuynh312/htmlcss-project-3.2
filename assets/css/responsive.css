@@ -57,11 +57,11 @@
 
     .menu-drawer {
         position: fixed;
-        inset: 0 40% 0 0;
+        inset: 0 0 0 20%;
         background: #fff;
         padding: 60px;
         z-index: 2;
-        transform: translateX(-100%);
+        transform: translateX(100%);
         transition: ease 0.5s;
     }
 
@@ -255,6 +255,10 @@
         gap: 30px;
     }
 
+    .feature-item {
+        width: 100%;
+    }
+
     .feature-item:hover {
         transform: none;
     }
@@ -366,7 +370,7 @@
     }
 
     /* Header */
-    .status-bar {
+    /* .status-bar {
         padding: 26px 10px 0;
         background: #fff;
     }
@@ -407,7 +411,7 @@
         font-size: 1.3rem;
         font-weight: 600;
         line-height: 1.23;
-    }
+    } */
 
     .nav::before {
         display: none;
@@ -599,8 +603,8 @@
     }
 
     .mobile-btn__icon {
-        width: 9px;
-        height: 9px;
+        width: 16px;
+        height: 16px;
     }
 
     .mobile-btn--disable:hover {
@@ -874,7 +878,7 @@
 
     /* Footer */
     .footer {
-        padding-bottom: 0;
+        padding-bottom: 20px;
     }
 
     .footer-wrap {

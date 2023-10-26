@@ -12,6 +12,7 @@
 html,
 body {
     scroll-behavior: smooth;
+    overscroll-behavior: none;
 }
 
 html {
@@ -234,6 +235,13 @@ article {
     top: 50%;
     left: -50%;
     transform: translate(0, -50%);
+}
+
+.hero-watch__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 @keyframes spiner {
@@ -1191,7 +1199,7 @@ article {
 /* Footer */
 .footer {
     background: var(--primary-color);
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 .footer-wrap {
@@ -1315,4 +1323,9 @@ article {
         #295a5a 53.48%,
         rgba(38, 82, 82, 0) 100%
     );
+}
+
+.footer__copyright {
+    padding-top: 14px;
+    text-align: center;
 }
